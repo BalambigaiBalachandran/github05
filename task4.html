@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biodata Form</title>
+</head>
+<body>
+ <h1 style="color:darkblue;">Biodata Form</h2>
+<hr>
+  <form>
+      <!-- details -->
+  <label for="name"><b>Full Name:</b></label>
+  <input type="text" id="name" name="name" value="Balambigai.B"><br><br>
+
+  <label for="dob"><b>Date of Birth:</b></label>
+  <input type="date" id="dob" name="dob" value="29/10/2004"><br><br>
+
+  <label for="gender"><b>Gender:</b></label>
+  <select id="gender" name="gender" value="Female">
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select><br><br>
+
+  <label for="phone"><b>Phone Number:</b></label>
+  <input type="tel" id="phone" name="phone" ><br><br>
+
+  <label for="email"><b>Email:</b></label>
+  <input type="email" id="email" name="email" value="balambigaibalachandran@gmail.com"><br><br>
+
+  <label for="address"><b>Address:</b></label><br>
+  <textarea id="address" name="address" rows="3" cols="30">51,kabilar street, parasalur,Sembanarkoil Mayiladuthurai.</textarea><br><br>
+
+  <label for="photo">Upload Photo:</label>
+  <input type="file" id="photo" name="photo"><br><br>
+</form>
+  <!-- Educational qualification -->
+       <tr>
+        <td colspan="2">
+          <style>
+            table, th, td {
+              border: 1px solid black;
+         border-collapse: collapse;
+       }
+         th { background-color: #96D4D4;
+       }
+    </style>
+          <h3 style="color: #044866;">Educational Qualification:</h3>
+    <th style="background-color: rgb(183, 247, 183)" >
+    <table>
+    <tr>
+    <th>Qualification</th>
+    <th>Institution</th>
+    <th>Year</th>
+    <th>Percentage</th>
+    </tr>
+    <tr>
+        <td>SSLC</td>
+        <td>Kalaimahal Matric. Higher sec.School</td>
+        <td>2020</td>
+        <td>90%</td>
+    </tr>
+    <tr>
+       <td>HSC</td>
+        <td>Kalaimahal Matric. Higher sec.School</td>
+        <td>2022</td>
+        <td>80%</td>
+    </tr>
+    <tr>
+        <td>Degree</td>
+        <td>A.V.C.College(Autonomus)</td>
+        <td>2025</td>
+        <td>90%</td>
+    </tr>
+  </table>
+    <!-- Skills -->
+      <tr>
+        <br><td><b>Skills:</b></td>
+        <td><br><br><textarea name="skills"  rows="3" cols="30">HTML,CSS,Javascript.</textarea></td>
+       </tr>
+
+      <tr><br><br>
+       <td><b>Hobbies:</b></td>
+       <td><br><br><textarea name="hobbies" rows="3" cols="30">Drawing,Photography,Editing.</textarea></td>
+      </tr>
+
+      <tr><br><br><hr>
+      <td><b>Declaration:</b></td>
+      <br><audio controls>
+         <source src="c:\Users\balam\Music\audio1.mp3" type="audio/mpeg">
+      </tr>
+    </audio>
+  <!-- sign -->
+       <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+  <div>
+    <label><b>Place:</b></label>
+    <input type="text" value="Mayiladuthurai">
+  </div>
+  <div>
+    <label><b>Signature:</b></label>
+    <input type="text" value="Balambigai">
+  </div>
+</div>
+
+ </table>
+  </form>
+
+</body>
+</html>

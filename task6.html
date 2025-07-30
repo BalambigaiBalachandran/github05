@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flex Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      min-height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      background: #3a5269;
+      color: white;
+      padding: 15px;
+    }
+
+    .header > div {
+      flex: 1;
+      text-align: center;
+    }
+
+    .middle {
+      display: flex;
+      gap: 15px;
+      flex: 1;
+      justify-items: auto;
+    }
+
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 15px;
+    }
+
+    .left-column > div,
+    .right-column {
+      background: white;
+      padding: 15px;
+      flex: 1;
+    }
+
+    .right-column {
+      flex: 2;
+    }
+
+    .right-column img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background: #3a5269;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div><strong>Logo</strong></div>
+      <div><h2>My Flex Layout</h2></div>
+      <div><h2>About Us</h2></div>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="middle">
+      <!-- Left Column -->
+      <div class="left-column">
+        <div class="left-top">
+          <h3>We specialize in delivering innovative web design and development solutions tailored to your business needs.</h3>
+          <p>This is some text with an image below it.</p>
+        </div>
+        <div class="left-bottom">
+          <h3>Our team is committed to crafting user-friendly, accessible, and visually compelling websites that help you stand out in a competitive digital landscape.</h3>
+          <p>More text content here for the second box.</p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+        <h3>Image</h3>
+        <p>This section takes up more space and includes a larger image.</p>
+        <img src="https://via.placeholder.com/400x300" alt="Right Image">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2025 My Flex Website. All rights reserved.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

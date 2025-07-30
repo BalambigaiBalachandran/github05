@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Table </title>
+  <style>
+    table {
+      border-collapse: collapse;
+     }
+    th, td {
+      border: 2px solid #080000;
+      padding: 10px;
+      
+    }
+    
+    /* Row background color */
+    tr:nth-child(1) {
+      background-color: #e36666; /* Light gray row */
+    }
+    /* Column background color using nth-child for each td in column 3 */
+    td:nth-child(2), th:nth-child(2) {
+      background-color: #b3fada; /* Light green column */
+    }
+     td:nth-child(2),
+    th:nth-child(2) 
+    {
+      background-color: #ebdcb0; /* Light yellow */
+    }
+       td:nth-child(1),
+    th:nth-child(1)
+     {
+      background-color:rgb(250, 205, 205); 
+     }
+     td:nth-child(4),
+    th:nth-child(4)
+     {
+      background-color:rgb(248, 171, 208); 
+     }
+     th:nth-child(4) {
+     background-color: #b3fada; 
+     }
+     
+  </style>
+</head>
+<body>
+<table>
+    <h1>Student Marks Table </h1>
+    <!-- Header rows -->
+    <tr>
+      <th rowspan ="2">Roll No</th>
+      <th rowspan="2">Name</th>
+      <th colspan="3">Marks</th>
+    
+    </tr>
+    <tr>
+      <th>Maths</th>
+      <th>Science</th>
+      <th>Computer</th>
+    </tr>
+
+    <!-- Data rows -->
+    <tr>
+      <td>101</td>
+      <td>Atchu</td>
+      <td>85</td>
+      <td>78</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Bala</td>
+      <td>80</td>
+      <td>85</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Harini</td>
+      <td colspan="2">Absent</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>Divya</td>
+      <td>91</td>
+      <td>89</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>Anu</td>
+      <td>70</td>
+      <td>75</td>
+      <td>77</td>
+    </tr>
+  </table>
+
+</body>
+</html>

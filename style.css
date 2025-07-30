@@ -1,0 +1,140 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: none;
+  padding: 20px;
+}
+
+section.active {
+  display: block;
+}
+
+/* Navbar */
+nav {
+  background-color: rgb(47, 55, 53);
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #1fde95;
+}
+
+nav a.active {
+  background-color: #0ce587;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Form */
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #66e0c8;
+  color: rgb(23, 20, 20);
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #16a085;
+}
+
+/* Tooltip */
+.tooltip-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-trigger {
+  display: inline-block;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  min-width: 150px;
+}
+
+.tooltip-dropdown:hover .tooltip-content {
+  display: block;
+}
+
+.tooltip-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tooltip-content li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.tooltip-content li:hover {
+  background-color: #2cd882;
+}
+
+/* Gallery */
+.gallery img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 8px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  opacity: 1.0;
+}

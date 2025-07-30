@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="#" onclick="showSection('home')" id="nav-home">Home</a>
+    <a href="#" onclick="showSection('form')" id="nav-form">Form</a>
+    <a href="#" onclick="showSection('gallery')" id="nav-gallery">Gallery</a>
+  </nav>
+
+  <section id="home" class="active">
+    <div class="container">
+      <h1>Welcome to MongoDB</h1>
+      <p>MongoDB is a document-oriented NoSQL database used for high volume data storage.</p>
+      <p>It stores data in JSON-like documents, making data integration easier and faster.</p>
+      <h3>"After filling out the registration form, the user clicks the submit button and is redirected."</h3>
+    </div>
+  </section>
+
+  <section id="form">
+    <div class="form-container">
+      <h2>Registration Form</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your Name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your Email" required><br><br>
+
+        <label>Address:</label>
+        <textarea name="message" placeholder="Enter your Address"></textarea><br><br>
+
+        <label>Mobile Number:</label>
+        <input type="number" name="mobile" placeholder="Enter your number"><br><br>
+
+        <label>City:</label>
+        <div class="tooltip-dropdown"  onclick="toggleDropdown">
+          <span class="tooltip-trigger">-- Select City --</span>
+          <div class="tooltip-content">
+            <ul>
+              <li>Mayiladuthurai</li>
+              <li>Vadakarai</li>
+              <li>Tirchy</li>
+              <li>Tanjore</li>
+              <li>Chennai</li>
+            </ul>
+          </div>
+        </div><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Photo Gallery</h2>
+    <img src="C:\Users\balam\OneDrive\Pictures\WhatsApp Image 2025-07-21 at 21.53.09_2e375e37.jpg" alt="Sample 1">
+    <img src="C:\Users\balam\OneDrive\Pictures\WhatsApp Image 2025-07-21 at 21.53.09_479a432a.jpg" alt="Sample 2">
+  </section>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+
+      document.querySelectorAll("nav a").forEach(link => link.classList.remove("active"));
+      document.getElementById("nav-" + id).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
